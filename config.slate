@@ -1,0 +1,61 @@
+# ======================================
+# Slate config by Filip Johansson
+# ======================================
+
+
+# Configs
+# ============
+config defaultToCurrentScreen true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+
+# Aliases
+# ============
+# Define the hyper key
+alias hyper ctrl;shift;alt;cmd
+
+# Default window sizes
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+
+# Key bindings
+# ============
+
+# Window positions
+bind right:${hyper} ${righthalf}
+bind x:${hyper} ${righthalf}
+bind left:${hyper} ${lefthalf}
+bind z:${hyper} ${lefthalf}
+bind space:${hyper} ${full}
+
+# Change monitors
+#bind left:alt;${hyper} throw 0 resize
+#bind right:alt;${hyper} throw 1 resize
+
+# Hint
+bind tab:${hyper} hint ASDFGZXCVB
+
+# Application switching
+bind 1:${hyper} focus 'Mail'
+bind 2:${hyper} focus 'Google Chrome'
+bind 3:${hyper} focus 'Skype'
+bind 4:${hyper} focus 'Messages'
+
+bind q:${hyper} focus 'Sublime Text'
+bind w:${hyper} focus 'Google Chrome Canary'
+bind e:${hyper} focus 'SourceTree'
+
+# Focus windows
+#bind left:shift;${hyper} focus left
+#bind right:shift;${hyper} focus right
+
+# Hide application
+bind esc:${hyper} hide 'current'
