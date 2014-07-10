@@ -58,20 +58,21 @@ This setup uses the following keyboard shortcuts.
 
 Shortcut | What it does
 ---|---
-⇪ + X|First trigger: Move and resize the window to the left side of the screen, Second trigger: Throw window to screen to the left
-⇪ + C|First trigger: Move and resize the window to the right side of the screen, Second trigger: Throw window to screen to the right
+⇪ + A|First trigger: Move and resize the window to the left side of the screen, Second trigger: Throw window to screen to the left
+⇪ + S|First trigger: Move and resize the window to the right side of the screen, Second trigger: Throw window to screen to the right
 ⇪ + Z|Undo last action
 ⇪ + Space|First trigger: Move and resize the window to screen center, Second trigger: Move and resize the window to full screen
-⇪ + Esc|Hide the window
+⇪ + X|Hide the window
 ⇪ + G|Show the grid
 ⇪ + 1|Switch to "Mail"
 ⇪ + 2|Switch to "Google Chrome"
 ⇪ + 3|Switch to "Skype"
 ⇪ + 4|Switch to "Messages"
 ⇪ + Q|Switch to "Sublime Text"
-⇪ + W|Switch to "Google Chrome Canary" (doesn't actually work)
+⇪ + W|Switch to "Google Chrome" (Still waiting for a good way to switch to Canary)
+⇪ + R|Switch to "iTerm"
 ⇪ + E|Switch to "SourceTree"
-⇪ + Tab|Show hint
+⇪ + Return|Relaunch Slate
 
 ##Resources and read more
 A [blog post by Tristan Hume](http://thume.ca/howto/2012/11/19/using-slate/) was the main reason I started using Slate and the Caps Lock Hack was taken from a [blog post by Tenshu](http://www.tenshu.net/2012/11/using-caps-lock-as-new-modifier-key-in.html).

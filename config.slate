@@ -9,11 +9,11 @@ config defaultToCurrentScreen true
 config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
-config gridBackgroundColor "0;0;0;0"
+config gridBackgroundColor "0;0;0;.1"
 config gridRoundedCornerSize 0
 config gridCellBackgroundColor "0;0;0;.5"
-config gridCellSelectedColor "0;0;0;.8"
-config gridCellRoundedCornerSize 0
+config gridCellSelectedColor "0;0;0;0"
+config gridCellRoundedCornerSize 5
 
 
 # Aliases
@@ -52,8 +52,8 @@ layout 2monitors 'Sublime Text' ${lefthalf} ${screen-cd-30}
 # ============
 
 # Window positions
-bind c:${hyper} chain ${righthalf} | throw 1 resize
-bind x:${hyper} chain ${lefthalf} | throw 0 resize
+bind a:${hyper} chain ${lefthalf} | throw 1 resize
+bind s:${hyper} chain ${righthalf} | throw 0 resize
 bind space:${hyper} chain ${center} | ${full}
 
 # Undo
@@ -69,8 +69,9 @@ bind 3:${hyper} focus 'Skype'
 bind 4:${hyper} focus 'Messages'
 
 bind q:${hyper} focus 'Sublime Text'
-bind w:${hyper} focus 'Google Chrome Canary'
-bind e:${hyper} focus 'SourceTree'
+bind w:${hyper} focus 'Google Chrome'
+bind e:${hyper} focus 'iTerm'
+bind r:${hyper} focus 'SourceTree'
 
 # Focus windows
 #bind left:${hyper} focus left
@@ -80,7 +81,7 @@ bind e:${hyper} focus 'SourceTree'
 bind g:${hyper} grid padding:10 ${screen-cd-30}:6,4 ${screen-mbp-retina}:6,4
 
 # Hide application
-bind esc:${hyper} hide 'current'
+bind x:${hyper} hide 'current'
 
 # Relaunch Slate
 bind return:${hyper} relaunch
