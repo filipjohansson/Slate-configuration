@@ -24,6 +24,8 @@ alias hyper ctrl;shift;alt;cmd
 # Define screen sizes
 alias screen-mbp-retina 2880x1800
 alias screen-cd-30 2560x1600
+alias first-screen 1
+alias second-screen 0
 
 # Default window sizes
 alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
@@ -54,6 +56,8 @@ layout 2monitors 'Sublime Text' ${lefthalf} ${screen-cd-30}
 # Window positions
 bind a:${hyper} chain ${lefthalf} | throw 1 resize
 bind s:${hyper} chain ${righthalf} | throw 0 resize
+bind a:${hyper} chain ${lefthalf} | throw ${second-screen} resize
+bind s:${hyper} chain ${righthalf} | throw ${first-screen} resize
 bind space:${hyper} chain ${center} | ${full}
 
 # Undo
